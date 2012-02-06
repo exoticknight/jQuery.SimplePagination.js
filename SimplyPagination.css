@@ -1,0 +1,109 @@
+﻿/*-------------------------------分页按钮----------------------------*/
+.btn_default {
+margin: 0 2px;
+width: 25px;
+height: 20px;
+line-height: 20px;
+float: left;
+text-align: center;
+border: none;
+color: #6d6d6d;
+font-size: 0.8em;
+cursor: pointer;
+}
+
+.btn_hover_default {
+
+}
+
+.page_select_default {
+margin: 0 2px;
+height: 20px;
+line-height: 25px;
+width: 40px;
+font-size: 0.8em;
+}
+
+.btn_list_default {
+margin: 0px;
+padding: 0px;
+float: left;
+}
+
+.btn_list_default li {
+display: inline;
+float: left;
+}
+
+.btn_list_default li label {
+margin-right: 3px;
+height: 20px;
+line-height: 20px;
+}
+
+.btn_list_default li a:hover,  .pagination ul li.active a {
+background-color: #c7eefe;
+}
+
+.btn_list_default li.disabled a,  .pagination ul li.disabled a:hover {
+background-color: none;
+color: #bfbfbf;
+}
+
+.btn_list_default li.next a {
+border: 0;
+}
+/*----------------------------------------------------------*/
+
+
+
+
+
+
+/*modify from Bootstrap Twitter*/
+.pagination {
+height: 36px;
+margin: 18px 0;
+}
+
+.pagination ul {
+float: left;
+margin: 0;
+border: 1px solid #ddd;
+border: 1px solid rgba(0, 0, 0, 0.15);
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.pagination ul li {
+display: inline;
+}
+
+.pagination ul li a {
+float: left;
+padding: 0 14px;
+line-height: 34px;
+border-right: 1px solid;
+border-right-color: #ddd;
+border-right-color: rgba(0, 0, 0, 0.15);
+*border-right-color: #ddd; /* IE6-7 */ 
+text-decoration: none;
+}
+
+.pagination ul li a:hover,  .pagination ul li.active a {
+background-color: #c7eefe;
+}
+
+.pagination ul li.disabled a,  .pagination ul li.disabled a:hover {
+background-color: none;
+color: #bfbfbf;
+}
+
+.pagination ul li.next a {
+border: 0;
+}
+/*----------------------------------------------------------*/
