@@ -1,109 +1,88 @@
 ﻿/*-------------------------------分页按钮----------------------------*/
-.btn_default {
-margin: 0 2px;
-width: 25px;
-height: 20px;
-line-height: 20px;
-float: left;
-text-align: center;
-border: none;
-color: #6d6d6d;
-font-size: 0.8em;
-cursor: pointer;
-}
-
-.btn_hover_default {
-
-}
-
-.page_select_default {
-margin: 0 2px;
-height: 20px;
-line-height: 25px;
-width: 40px;
-font-size: 0.8em;
-}
-
-.btn_list_default {
-margin: 0px;
-padding: 0px;
-float: left;
-}
-
-.btn_list_default li {
-display: inline;
-float: left;
-}
-
-.btn_list_default li label {
-margin-right: 3px;
-height: 20px;
-line-height: 20px;
-}
-
-.btn_list_default li a:hover,  .pagination ul li.active a {
-background-color: #c7eefe;
-}
-
-.btn_list_default li.disabled a,  .pagination ul li.disabled a:hover {
-background-color: none;
-color: #bfbfbf;
-}
-
-.btn_list_default li.next a {
-border: 0;
-}
-/*----------------------------------------------------------*/
-
-
-
-
-
-
-/*modify from Bootstrap Twitter*/
-.pagination {
-height: 36px;
-margin: 18px 0;
-}
-
-.pagination ul {
-float: left;
+.jTbPage_btn_default {
 margin: 0;
-border: 1px solid #ddd;
-border: 1px solid rgba(0, 0, 0, 0.15);
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 3px;
--webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
--moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+padding: 0 10px;
+text-align: center;
+cursor: pointer;
+min-width: 30px;
 }
 
-.pagination ul li {
+.jTbPage_button_bar_divition {
+border-right: 1px solid #C2C2C2;
+}
+
+.jTbPage_btn_hover_default {
+background-color: #F6F6F6;
+background-image: -webkit-linear-gradient(top,#F6F6F6,#DCDCDC);
+background-image: -moz-linear-gradient(top,#F6F6F6,#DCDCDC);
+background-image: -ms-linear-gradient(top,#F6F6F6,#DCDCDC);
+background-image: -o-linear-gradient(top,#F6F6F6,#DCDCDC);
+background-image: linear-gradient(top,#F6F6F6,#DCDCDC);
+filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#F6F6F6', endColorstr='#DCDCDC'); 
+}
+
+.jTbPage_tr_hover_default td {
+font-weight: bold;
+background-color: #B6B6B6;
+background-image: -webkit-linear-gradient(top,#B6B6B6,#7F7F7F);
+background-image: -moz-linear-gradient(top,#B6B6B6,#7F7F7F);
+background-image: -ms-linear-gradient(top,#B6B6B6,#7F7F7F);
+background-image: -o-linear-gradient(top,#B6B6B6,#7F7F7F);
+background-image: linear-gradient(top,#B6B6B6,#7F7F7F);
+filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#B6B6B6', endColorstr='#7F7F7F'); 
+}
+
+.jTbPage_page_select_default {
+float: left;
+height: 20px;
+line-height: 20px;
+width: 50px;
+margin: 3px;
+_margin: 1px;/*IE6*/
+border-width: 1px;
+border-style: solid;
+border-color: #646464 #FFF #FFF #646464;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+
+.jTbPage_btn_bar_default {
+display: inline-block;
+zoom: 1;
+*diaplay: inline;/*IE6 IE7*/
+height: 25px;
+border: 1px solid #A5A5A5;
+border: 1px solid rgba(0, 0, 0, 0.35);
+background-color: #D8D8D8;
+background-image: -webkit-linear-gradient(top,#D8D8D8,#C8C8C8);
+background-image: -moz-linear-gradient(top,#D8D8D8,#C8C8C8);
+background-image: -ms-linear-gradient(top,#D8D8D8,#C8C8C8);
+background-image: -o-linear-gradient(top,#D8D8D8,#C8C8C8);
+background-image: linear-gradient(top,#D8D8D8,#C8C8C8);
+filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#D8D8D8', endColorstr='#C8C8C8'); 
+color: #333;
+font-size: 14px;
+font-weight: bold;
+text-shadow: 1px 1px #F0F0F0;
+}
+
+.jTbPage_btn_bar_default ul {
+margin: 0;
+padding: 0;
 display: inline;
 }
 
-.pagination ul li a {
+.jTbPage_btn_bar_default ul li {
+display: inline;
 float: left;
-padding: 0 14px;
-line-height: 34px;
-border-right: 1px solid;
-border-right-color: #ddd;
-border-right-color: rgba(0, 0, 0, 0.15);
-*border-right-color: #ddd; /* IE6-7 */ 
-text-decoration: none;
+height: 25px;
+line-height: 25px;
 }
 
-.pagination ul li a:hover,  .pagination ul li.active a {
-background-color: #c7eefe;
-}
-
-.pagination ul li.disabled a,  .pagination ul li.disabled a:hover {
-background-color: none;
-color: #bfbfbf;
-}
-
-.pagination ul li.next a {
-border: 0;
+.jTbPage_btn_bar_default ul li label {
+margin: 0 5px 0 3px;
+height: 25px;
+line-height: 25px;
 }
 /*----------------------------------------------------------*/
